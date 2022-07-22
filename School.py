@@ -25,11 +25,5 @@ class School:
         return school
 
 
-#test
-mySchool = School("Codecademy", "high", 100)
-print(mySchool)
-print(mySchool.get_name())
-print(mySchool.get_level())
-mySchool.set_numberOfStudent(200)
-print(mySchool.get_numberOfStudent())   
-    
+
+
