@@ -1,0 +1,35 @@
+from hashlib import new
+
+
+class School:
+    def __init__(self, name, level, numberOfStudents):
+        self.name = name
+        self.level = level
+        self.numberOfStudents = numberOfStudents
+        
+    def get_name(self):
+        return self.name
+    
+    def get_level(self):
+        return self.level
+    
+    def get_numberOfStudent(self):
+        return self.numberOfStudents
+
+    def set_numberOfStudent(self,newNumberOfStudents):
+        self.numberOfStudents = newNumberOfStudents
+
+
+    def __repr__(self):
+        school = "A {} school name {} with {} numberOfStudents".format(self.level, self.name, self.numberOfStudents)
+        return school
+
+
+#test
+mySchool = School("Codecademy", "high", 100)
+print(mySchool)
+print(mySchool.get_name())
+print(mySchool.get_level())
+mySchool.set_numberOfStudent(200)
+print(mySchool.get_numberOfStudent())   
+    
